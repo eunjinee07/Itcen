@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class IndexController {
     @GetMapping("/")
     public @ResponseBody String getIndex() {
-        return "Hello world";
+        return "test the conflict situation";
     }
     
 }
