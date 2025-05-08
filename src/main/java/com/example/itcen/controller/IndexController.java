@@ -8,9 +8,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class IndexController {
+    
     @GetMapping("/")
     public @ResponseBody String getIndex() {
-        return "test the conflict situation";
+    
+        String make_title = "Hello world";
+        int itcen_alarm = 0;
+        if(itcen_alarm == 0){
+            make_title = "It was changed Hello World";
+        }
+        return make_title;
     }
     
 }
